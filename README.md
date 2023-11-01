@@ -12,11 +12,7 @@ Para rodar, é necessária a execução dos seguintes comandos em um terminal li
   wget --no-check-certificate https://dl.xpdfreader.com/xpdf-tools-linux-4.04.tar.gz
   tar -xvf xpdf-tools-linux-4.04.tar.gz && sudo cp xpdf-tools-linux-4.04/bin64/pdftotext /usr/local/bin
 
-Caso queira testar no colab, rode o seguinte trecho:
-  pip install --upgrade pip
-  pip install farm-haystack[colab]
-  wget --no-check-certificate https://dl.xpdfreader.com/xpdf-tools-linux-4.04.tar.gz
-  tar -xvf xpdf-tools-linux-4.04.tar.gz && sudo cp xpdf-tools-linux-4.04/bin64/pdftotext /usr/local/bin
+Caso queira testar no Colab/Jupyter, basta utilizar o notebook "ChatBotUnicamp2024" e rodá-lo como preferir
 
 Ademais, para que a ferramenta funcione, você precisará de uma chave da API da OpenAI, uma vez que a ferramenta faz uso do GPT Turbo 3.5 para geração das respostas.
 A implementação foi simples e rápida através da leitura da documentação do GPT e do framework Haystack. As funções foram testadas primariamente no colab devido a sua alta capacidade de processamento.
